@@ -15,7 +15,21 @@ var num2 : Int = 20
 var sum : Int = 0
 
 var var1 : Any =0;
+
+
+val Strdata = """
+helllo i am yog
+i am here at codekul
+"""
 fun sunmof () = (num1+num2)
+
+
+fun sumwithreturn() : Int {
+    sum=num1+num2
+    return sum
+}
+
+
 
 fun main(args : Array<String>){
     println(AutoDet)
@@ -28,5 +42,8 @@ fun main(args : Array<String>){
     println( "Var with any type:  \n Var = $var1 " )
     var1 = "String stored"
     println(" var = $var1")
+
+    println("Sum returned with return ${sumwithreturn()}")
+
 }
 
